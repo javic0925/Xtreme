@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-family: "Orbitron", sans-serif;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+  }
+  
+  html {
+    font-size: 62.5%;
+   
+  }
+  
+  body {
+    overscroll-behavior: none;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #121B24; 
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
