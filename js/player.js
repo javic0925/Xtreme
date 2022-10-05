@@ -22,7 +22,7 @@ $(function () {
     song.addEventListener('pause', function () {
         song.setAttribute('src' , 'https://c17.radioboss.fm:8162/stream');
         song.currentTime = 0;
-        $('#playback').attr('class', 'fa fa-play fa-lg');
+        $('#playback').attr('src', './assets/Icons/Play.svg');
     });
 
     
