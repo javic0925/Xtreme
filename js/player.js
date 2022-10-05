@@ -39,8 +39,8 @@ let mediaSession = navigator.mediaSession;
 
 if ("mediaSession" in navigator){
     navigator.mediaSession.metadata = new MediaMetadata({
-      title: "Radio",
-      artist: "XtremeVibes",
-      album: "Otras Vibras",
-      artwork: [{src: "#"}]
+      title: "XtremeVibes",
+      artist: "Otras Vibras",
+      album: "Radio",
+      artwork: [{src: "../assets/images/cover.jpg"}]
     });}

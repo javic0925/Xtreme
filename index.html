@@ -1,21 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta name="description" content="Are you looking for music and good vibes? Encontraste Xtremevibes la Radio de otras Vibras. Bienvenidos al planeta X una comunidad de musica y buena vibra .We are a group of Latin people that want to spread the GOOD VIBES over the world! Join Us!">
+    <meta name="author" content="XtremeVibes">
+    <meta property="og:title" content="XtremeVibes">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://live.xtremevibes.com">
+    <meta property="og:description" content="Are you looking for music and good vibes? Encontraste Xtremevibes la Radio de otras Vibras. Bienvenidos al planeta X una comunidad de musica y buena vibra .We are a group of Latin people that want to spread the GOOD VIBES over the world! Join Us!">
+    <meta property="og:image" content="./assets/images/cover.jpg">
+    <meta name="theme-color" content="#121B24">
+    <link rel="apple-touch-icon" href="./assets/Icons/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="./assets/Icons/favicon.ico" type="image/x-icon">
     <title>XtremeVibes</title>
+    <link rel="manifest" href="manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles/style.css">
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="./js/player.js"></script>
-    <script src="./js/showTab.js"></script>
+    <script src="./js/showChat.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('./service-worker.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
 </head> 
 
 <body>
+    <div id="mySideChat">
+        <div id="closeBtn">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeChat()"><img src="./assets/Icons/close.svg" alt=""></a>
+        </div>
+        <div id="chatBox">
+            <iframe src="https://www6.cbox.ws/box/?boxid=862999&boxtag=aa0ngK" width="100%" height="100%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
     <section class="main">
         <div class="secondary-main">
             
@@ -37,7 +71,7 @@
             <div id="social">
                 <a href="#"><img src="./assets/Icons/Share.svg" alt=""></a>
                 <a href="#"><img src="./assets/Icons/Facebook.svg" alt=""></a>
-                <a href="#"><img src="./assets/Icons/Chat.svg" alt=""></a>
+                <a href="javascript:void(0)" class="closebtn" onclick="openChat()"><img src="./assets/Icons/Chat.svg" alt=""></a>
                 <a href="#"><img src="./assets/Icons/Telegram.svg" alt=""></a>
                </div> 
         </div>

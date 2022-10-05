@@ -1,0 +1,33 @@
+{
+
+    "name": "XtremeVibes",
+    "short_name": "XtremeVibes",
+    "start_url": "/",
+    "display": "standalone",
+    "description": "Are you looking for music and good vibes? Encontraste Xtremevibes la Radio de otras Vibras. Bienvenidos al planeta X una comunidad de musica y buena vibra .We are a group of Latin people that want to spread the GOOD VIBES over the world! Join Us!",
+    "theme_color": "#121B24",
+    "background_color": "#121B24",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "../assets/Icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "../assets/Icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "screenshots": [
+        {
+          "src": "../assets/screenshots/IMG_1994.jpg",
+          "sizes": "2880x1800",
+          "type": "image/jpg",
+          "description": "XtremeVibes Home Screen"
+        }
+      ]
+    }
