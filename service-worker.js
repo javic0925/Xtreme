@@ -1,4 +1,4 @@
-var CACHE_NAME = 'my-site-cache-v2';
+var CACHE_NAME = 'my-site-cache-v3';
 var urlsToCache = [
   "./",
 ];
@@ -53,7 +53,7 @@ self.addEventListener('fetch', function (event) {
 // Update a service worker
 self.addEventListener('activate', function (event) {
 
-  var cacheAllowlist = ['my-site-cache-v2'];
+  var cacheAllowlist = ['my-site-cache-v3'];
 
   event.waitUntil(
     caches.keys().then(function (cacheNames) {

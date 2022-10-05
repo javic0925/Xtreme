@@ -148,8 +148,27 @@ a {
   transform-origin: 0 0;
   transform: rotate(-90deg);
   text-shadow: 0 0 1rem rgba(255, 255, 255, 0.3490196078);
+  -webkit-animation: opacity 1s ease-in-out;
+          animation: opacity 1s ease-in-out;
 }
 
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
 #title2 {
   position: absolute;
   height: 3rem;
@@ -164,6 +183,8 @@ a {
   transform-origin: 0 0;
   transform: rotate(90deg);
   text-shadow: 0 0 1rem rgba(77, 223, 106, 0.4823529412);
+  -webkit-animation: opacity 1s ease-in-out;
+          animation: opacity 1s ease-in-out;
 }
 
 #vinyl {
@@ -173,6 +194,28 @@ a {
   height: 20rem;
 }
 
+.animate {
+  -webkit-animation: spin 8s linear infinite;
+          animation: spin 8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 .recordPlayer {
   height: 70%;
   width: 100%;

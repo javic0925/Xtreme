@@ -105,7 +105,18 @@ position: relative;
         transform-origin: 0 0;
         transform: rotate(-90deg);
         text-shadow: 0 0 1rem #ffffff59;
+        animation: opacity 1s ease-in-out;
         }
+}
+
+@keyframes opacity {
+    from{
+opacity: 0;
+    }
+    to{
+opacity: 100%;
+    }
+    
 }
 
 #title2{
@@ -121,6 +132,7 @@ position: relative;
         transform-origin: 0 0;
         transform: rotate(90deg);
         text-shadow: 0 0 1rem #4ddf6a7b;
+        animation: opacity 1s ease-in-out;
         }
 }
 
@@ -131,7 +143,22 @@ position: relative;
     position: relative;
     width: 20rem;
     height: 20rem;
+    
+
 }
+
+.animate{
+    animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
 
 .recordPlayer{
     
